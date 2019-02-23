@@ -1,0 +1,290 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 380;
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+    color: #303120;
+    margin: 0;
+}
+/*######## Navbar ######### */
+
+.navBar, .container{
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navBar{
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.brand, .navLink, a{
+    text-transform: uppercase;
+    color: #303136;
+    text-decoration: none;
+    margin-top: 20px;
+
+
+}
+.brand{
+    font-size: 26px;
+    
+}
+.CodeLoad{
+    color: #f73307;
+   
+}
+
+
+.topNav{
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.topNav .navLink{
+    text-decoration: none;
+    padding-left: 35px;
+    font-size: 20px;
+
+}
+/*########## dropdownIcon ###### */
+
+.dropdownIcon{
+    display: none;
+}
+
+/*######## Header ######## */
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+}
+.headerImage{
+    display: flex;
+    max-width: 150px;
+    width: 100%;
+}
+
+    /*########### landing page first section ######## */
+
+    /* first row */
+.landing-page-section,
+.contact-container{
+    background-color: #d1faff;
+    padding: 4rem 2rem;
+    
+}    
+.media-objects{
+    display: flex;
+    align-items: center;
+    padding: 4rem 1rem;
+    
+}
+.imageLeft,
+.imageRight{
+     flex:1;  
+     justify-content: center;
+     display: flex; 
+}
+
+.text-wrapper-right,
+.text-wrapper-left{
+    flex: 1;
+}
+
+
+.imageLeft,
+.text-wrapper-left{
+    order: 1;
+}
+
+.imageRight,
+.text-wrapper-right{
+    order:2;
+}
+
+.Header-text-wrapper{
+    margin-top: 0;
+    font-size: 25px;
+}
+.icon{
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px 2px gray;
+    max-width: 200px;
+    max-height: 150px;
+    display: flex;
+}
+
+.text-info{
+    color: #737c89;
+    font-size: 15px;
+}
+
+/* Ask button */
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.ask-button{
+    background-color: #ff6100;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    border-radius: .7rem;
+    font-size: 1rem;
+    display:flex;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, .3);
+}
+
+.ask-button:hover{
+    color: #000000;
+}
+
+
+/* second section on our landing page */
+
+.section-header{
+    text-align: center;
+    padding: 5rem 0 3rem
+}
+
+.portfolio-wrapper{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.portfolio-objects{
+    max-width: 260px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+
+}
+
+
+.portfolio-box{
+                
+    background-color: #ddd2d2;  
+    width: 260px;
+    height: 260px;
+    max-width: 260px;
+    transition: .2s ease-in-out;
+}
+
+.portfolio-box:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+
+/* contact section */
+
+form label{
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.form-group{
+    margin-bottom: .9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.formControl{
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #737c89;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+    font-size: 1rem;
+    line-height: 1.3;
+    background-clip: border-box;
+    display: block;
+}
+.submit-btn{
+    margin-top: 3rem;
+
+}
+
+@media(max-width: 768px){
+    ul.topNav li a.navLink{
+        display: none;
+    }
+    ul.topNav li.dropdownIcon{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+    ul.topNav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    ul.topNav.responsive{
+        flex-direction: column;
+        text-align: right;
+    }
+    
+    ul.topNav.responsive li{
+        position: relative;
+        top: 30px;
+        right: 30px;
+    }
+    ul.topNav.responsive li a.navLink{
+        display: block;
+        line-height: 2;
+    }
+
+    .media-objects{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .imageLeft,
+    .imageRight{
+        order: 1;
+    }
+
+    .text-wrapper-left,
+    .text-wrapper-right{
+        order: 2;
+        padding-top: 2rem;
+    }
+
+    .portfolio-wrapper{
+        text-align: center;
+    }
+    .icon{
+        margin-bottom: 2rem;
+    }
+}
+
+/* portfolio media querry */
+@media (max-width: 599px){
+    .portfolio-wrapper{
+        justify-content: center;
+        
+    }
+}
